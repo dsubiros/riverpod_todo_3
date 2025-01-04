@@ -11,13 +11,17 @@ const _uuid = Uuid();
 class TodoNotifier extends _$TodoNotifier {
   @override
   TodoState build() {
-    return const TodoState(items: []);
+    return TodoState(items: [
+      Todo(id: 'todo-0', description: 'Pray before going to bed'),
+      Todo(id: 'todo-1', description: 'Send tithe to Cuba'),
+      Todo(id: 'todo-2', description: 'Take the trash out'),
+    ]);
   }
 
   Future<void> add(String description) async {
     state = state.copyWith(isLoading: true);
     // Simulate network delay
-    await Future.delayed(const Duration(seconds: 5));
+    await Future.delayed(const Duration(seconds: 1));
 
     await AsyncValue.guard(() async {
       state = state.copyWith(
