@@ -1,0 +1,19 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "OK riverpod_todo_3 (Flutter sdk gphone64 x86 64)",
+            "program": "lib/main.dart",
+            "deviceId": "emulator-5554",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--host-vmservice-port=43550",
+                "--dds-port=43552"
+            ]
+        }
+    ]
+}
